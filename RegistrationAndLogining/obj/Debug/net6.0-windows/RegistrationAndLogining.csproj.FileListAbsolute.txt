@@ -19,3 +19,4 @@ C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\o
 C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\obj\Debug\net6.0-windows\RegistrationAndLogining.pdb
 C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\obj\Debug\net6.0-windows\RegistrationAndLogining.genruntimeconfig.cache
 C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\obj\Debug\net6.0-windows\ref\RegistrationAndLogining.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\obj\Debug\net6.0-windows\App.baml
