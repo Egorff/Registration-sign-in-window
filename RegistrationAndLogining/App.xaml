@@ -1,6 +1,7 @@
 ﻿<Application x:Class="RegistrationAndLogining.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:Sys ="clr-namespace:System;assembly=mscorlib"
              xmlns:local="clr-namespace:RegistrationAndLogining"
              StartupUri="View/MainWindow.xaml">
     <Application.Resources>
@@ -11,5 +12,7 @@
                 </Setter>
             </Style.Setters>
         </Style>
+
+        <Sys:Double x:Key="InputFieldHeader">35</Sys:Double>
     </Application.Resources>
 </Application>

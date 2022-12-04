@@ -1,0 +1,12 @@
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ViewModelBaseLib\bin\Debug\net6.0\ViewModelBaseLib.deps.json
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ViewModelBaseLib\bin\Debug\net6.0\ViewModelBaseLib.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ViewModelBaseLib\bin\Debug\net6.0\ViewModelBaseLib.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ViewModelBaseLib\obj\Debug\net6.0\ViewModelBaseLib.csproj.AssemblyReference.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ViewModelBaseLib\obj\Debug\net6.0\ViewModelBaseLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ViewModelBaseLib\obj\Debug\net6.0\ViewModelBaseLib.AssemblyInfoInputs.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ViewModelBaseLib\obj\Debug\net6.0\ViewModelBaseLib.AssemblyInfo.cs
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ViewModelBaseLib\obj\Debug\net6.0\ViewModelBaseLib.csproj.CoreCompileInputs.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ViewModelBaseLib\obj\Debug\net6.0\ViewModelBaseLib.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ViewModelBaseLib\obj\Debug\net6.0\refint\ViewModelBaseLib.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ViewModelBaseLib\obj\Debug\net6.0\ViewModelBaseLib.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ViewModelBaseLib\obj\Debug\net6.0\ref\ViewModelBaseLib.dll

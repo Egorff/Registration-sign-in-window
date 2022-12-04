@@ -19,3 +19,12 @@ C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\o
 C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\obj\Debug\net6.0-windows\RegistrationAndLogining.pdb
 C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\obj\Debug\net6.0-windows\RegistrationAndLogining.genruntimeconfig.cache
 C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\obj\Debug\net6.0-windows\ref\RegistrationAndLogining.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\obj\Debug\net6.0-windows\App.baml
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\ViewModelBaseLib.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\ViewModelBaseLib.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\obj\Debug\net6.0-windows\View\Pages\LoginPage.g.cs
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\obj\Debug\net6.0-windows\View\Pages\RegistrationPage.g.cs
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\obj\Debug\net6.0-windows\View\Pages\LoginPage.baml
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\obj\Debug\net6.0-windows\View\Pages\RegistrationPage.baml
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\obj\Debug\net6.0-windows\RegistrationAndLogining.csproj.CopyComplete
