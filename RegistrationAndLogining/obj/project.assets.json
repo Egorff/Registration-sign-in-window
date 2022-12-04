@@ -10,7 +10,10 @@
         },
         "runtime": {
           "bin/placeholder/ViewModelBaseLib.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       }
     }
   },
