@@ -22,13 +22,15 @@
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="50"/>
-                <RowDefinition Height="15*"/>
+                <RowDefinition Height="31*"/>
                 <RowDefinition Height="50"/>
-                <RowDefinition Height="15*"/>
+                <RowDefinition Height="31*"/>
                 <RowDefinition Height="50"/>
-                <RowDefinition Height="17*"/>
+                <RowDefinition Height="35*"/>
                 <RowDefinition Height="50"/>
-                <RowDefinition Height="68*"/>
+                <RowDefinition Height="31*"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="61*"/>
             </Grid.RowDefinitions>
 
             <!--#region Labels-->
@@ -54,9 +56,9 @@
                    FontWeight="Bold" />
 
             <!--#endregion-->
-            
+
             <!--#region TextBoxes-->
-            
+
             <TextBox Grid.Column="3" 
                      FontSize="{StaticResource InputFieldHeader}"
                      Background="#FFE9E9E9"></TextBox>
@@ -72,9 +74,14 @@
             <PasswordBox Grid.Column="3" Grid.Row="6" 
                      FontSize="{StaticResource InputFieldHeader}" Background="#FFE9E9E9"
                      ></PasswordBox>
+
             <!--#endregion-->
 
+
+            <Button Grid.Row="8" Grid.Column="3" Width="200"
+                    Content="Register" 
+                    Style="{StaticResource Button}"></Button>
         </Grid>
-        
+
     </Grid>
 </Page>
