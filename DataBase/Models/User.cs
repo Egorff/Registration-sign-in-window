@@ -30,11 +30,17 @@ namespace DataBase.Models
         [Required(ErrorMessage = "Property password mustn`t be null.")]
         public string Password { get; set; }
 
+        public List<Users_Role> User_Role { get; set; }
+
+        public Salt Salt { get; set; } 
+
         #endregion
+
+
 
         #region Ctor
 
-        public User(Guid id, string login, string email, string password)
+        public User(Guid id, string login, string email, string password, Salt salt)
         {
             Id = id;   
             Login = login;
@@ -42,6 +48,7 @@ namespace DataBase.Models
             Email = email;
             NormalizedEmail = email.ToUpper();
             Password = password;
+            Salt = salt;
         }
 
         public User()
