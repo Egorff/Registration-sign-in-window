@@ -24,6 +24,23 @@ namespace DataBase.Models
 
         #endregion
 
+        #region Ctor
+
+        public Users_Role(Guid id, Guid userId, int roleId)
+        {
+            id = Id;
+            UserId = userId;
+            RoleId = roleId;
+
+        }
+
+        public Users_Role()
+        {
+
+        }
+
+        #endregion
+
         #endregion
 
         public override string ToString()

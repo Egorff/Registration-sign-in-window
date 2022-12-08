@@ -14,5 +14,23 @@
         </Style>
 
         <Sys:Double x:Key="InputFieldHeader">35</Sys:Double>
+
+        <Style x:Key="InputField" TargetType="TextBox">
+            <Style.Setters>
+                <Setter Property="Validation.ErrorTemplate">
+                    <Setter.Value>
+                        <ControlTemplate>
+                            <Border BorderBrush="OrangeRed" BorderThickness="3">
+                                <Grid>
+                                    <AdornedElementPlaceholder/>
+                                    <TextBlock Text="{Binding [0].ErrorContent}" Foreground="OrangeRed"
+                                               VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="12"/>
+                                </Grid>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style.Setters>
+        </Style>
     </Application.Resources>
 </Application>

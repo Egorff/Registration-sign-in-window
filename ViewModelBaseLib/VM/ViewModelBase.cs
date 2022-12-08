@@ -8,8 +8,12 @@ using System.Threading.Tasks;
 
 namespace ViewModelBaseLib.VM
 {
-    public class ViewModelBase : INotifyPropertyChanged
+    public class ViewModelBase : INotifyPropertyChanged, IDataErrorInfo
     {
+        public virtual string this[string columnName] => throw new NotImplementedException();
+
+        public virtual string Error => throw new NotImplementedException();
+
         public event PropertyChangedEventHandler? PropertyChanged;
 
         public void OnPropertyChanged(string Name)
