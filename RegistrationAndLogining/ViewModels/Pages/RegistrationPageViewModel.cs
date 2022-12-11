@@ -33,7 +33,7 @@ namespace RegistrationAndLogining.ViewModels.Pages
 
         public RegistrationPageViewModel()
         {
-            
+            m_login = string.Empty;
         }
 
         #endregion
@@ -45,6 +45,18 @@ namespace RegistrationAndLogining.ViewModels.Pages
             get 
             { 
                 string error = string.Empty;
+
+                switch (columnName)
+                {
+                    case nameof(Login):
+                        if (string.IsNullOrEmpty(Login))
+                        {
+                            error = "Field is mustn't be null.";
+                        }
+                        break;
+
+                
+                }
 
                 return error;
             }

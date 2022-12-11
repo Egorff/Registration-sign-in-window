@@ -68,7 +68,15 @@
             <TextBox Grid.Column="3" 
                      FontSize="{StaticResource InputFieldHeader}"
                      Background="#FFE9E9E9"
-                     Text="{Binding Login, UpdateSourceTrigger=LostFocus, Mode=TwoWay}"></TextBox>
+                     Style="{StaticResource InputField}">
+                <TextBox.Text>
+                    <Binding Path="Login" UpdateSourceTrigger="LostFocus" Mode="TwoWay">
+                        <Binding.ValidationRules>
+                            <DataErrorValidationRule></DataErrorValidationRule>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
 
             <TextBox Grid.Column="3" Grid.Row="2" 
                      FontSize="{StaticResource InputFieldHeader}" Background="#FFE9E9E9"

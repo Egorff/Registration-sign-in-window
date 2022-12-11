@@ -31,6 +31,25 @@
                     </Setter.Value>
                 </Setter>
             </Style.Setters>
+
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="True">
+                    <Trigger.Setters>
+                        <Setter Property="BorderBrush" Value="OrangeRed">
+                            
+                        </Setter>
+                    </Trigger.Setters>
+                </Trigger>
+
+                <Trigger Property="Validation.HasError" Value="False">
+                    <Trigger.Setters>
+                        <Setter Property="BorderBrush" Value="Green"/>
+
+                        <Setter Property="BorderThickness" Value="2"/>
+                    </Trigger.Setters>
+                </Trigger>
+
+            </Style.Triggers>
         </Style>
     </Application.Resources>
 </Application>
