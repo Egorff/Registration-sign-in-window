@@ -1,0 +1,17 @@
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\bin\Debug\net6.0\DatabaseControllerLib.deps.json
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\bin\Debug\net6.0\DatabaseControllerLib.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\bin\Debug\net6.0\DatabaseControllerLib.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\bin\Debug\net6.0\ControllerBaseLib.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\bin\Debug\net6.0\DataBase.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\bin\Debug\net6.0\ControllerBaseLib.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\bin\Debug\net6.0\DataBase.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\obj\Debug\net6.0\DatabaseControllerLib.csproj.AssemblyReference.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\obj\Debug\net6.0\DatabaseControllerLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\obj\Debug\net6.0\DatabaseControllerLib.AssemblyInfoInputs.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\obj\Debug\net6.0\DatabaseControllerLib.AssemblyInfo.cs
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\obj\Debug\net6.0\DatabaseControllerLib.csproj.CoreCompileInputs.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\obj\Debug\net6.0\DatabaseControllerLib.csproj.CopyComplete
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\obj\Debug\net6.0\DatabaseControllerLib.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\obj\Debug\net6.0\refint\DatabaseControllerLib.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\obj\Debug\net6.0\DatabaseControllerLib.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\obj\Debug\net6.0\ref\DatabaseControllerLib.dll

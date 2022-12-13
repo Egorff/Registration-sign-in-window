@@ -1,0 +1,12 @@
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ControllerBaseLib\bin\Debug\net6.0\ControllerBaseLib.deps.json
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ControllerBaseLib\bin\Debug\net6.0\ControllerBaseLib.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ControllerBaseLib\bin\Debug\net6.0\ControllerBaseLib.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ControllerBaseLib\obj\Debug\net6.0\ControllerBaseLib.csproj.AssemblyReference.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ControllerBaseLib\obj\Debug\net6.0\ControllerBaseLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ControllerBaseLib\obj\Debug\net6.0\ControllerBaseLib.AssemblyInfoInputs.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ControllerBaseLib\obj\Debug\net6.0\ControllerBaseLib.AssemblyInfo.cs
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ControllerBaseLib\obj\Debug\net6.0\ControllerBaseLib.csproj.CoreCompileInputs.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ControllerBaseLib\obj\Debug\net6.0\ControllerBaseLib.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ControllerBaseLib\obj\Debug\net6.0\refint\ControllerBaseLib.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ControllerBaseLib\obj\Debug\net6.0\ControllerBaseLib.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ControllerBaseLib\obj\Debug\net6.0\ref\ControllerBaseLib.dll

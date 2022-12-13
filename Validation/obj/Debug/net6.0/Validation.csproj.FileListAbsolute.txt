@@ -1,0 +1,12 @@
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\Validation\bin\Debug\net6.0\Validation.deps.json
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\Validation\bin\Debug\net6.0\Validation.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\Validation\bin\Debug\net6.0\Validation.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\Validation\obj\Debug\net6.0\Validation.csproj.AssemblyReference.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\Validation\obj\Debug\net6.0\Validation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\Validation\obj\Debug\net6.0\Validation.AssemblyInfoInputs.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\Validation\obj\Debug\net6.0\Validation.AssemblyInfo.cs
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\Validation\obj\Debug\net6.0\Validation.csproj.CoreCompileInputs.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\Validation\obj\Debug\net6.0\Validation.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\Validation\obj\Debug\net6.0\refint\Validation.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\Validation\obj\Debug\net6.0\Validation.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\Validation\obj\Debug\net6.0\ref\Validation.dll

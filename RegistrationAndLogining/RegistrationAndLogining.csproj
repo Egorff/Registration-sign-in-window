@@ -8,6 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DatabaseControllerLib\DatabaseControllerLib.csproj" />
+    <ProjectReference Include="..\Validation\Validation.csproj" />
     <ProjectReference Include="..\ViewModelBaseLib\ViewModelBaseLib.csproj" />
   </ItemGroup>
 
