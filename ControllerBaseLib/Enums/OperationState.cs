@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ControllerBaseLib.Enums
 {
-    internal class OperationState
+    public enum OperationState : byte
     {
+        OpSucceded = 0,
+        OpFailed = 1,
+        OpCancelled = 2
     }
 }

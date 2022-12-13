@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace ControllerBaseLib
 {
-    public class OperationFinishedEventArgs
+    public class OperationFinishedEventArgs<TOperetionType>
     {
         #region Prop
 
         public OperationState State { get; set; }
 
-        public dynamic Type { get; set; }
+        public TOperetionType Type { get; set; }
 
         public Exception Exception { get; set; }
 
