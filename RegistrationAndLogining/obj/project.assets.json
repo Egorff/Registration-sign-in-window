@@ -1085,6 +1085,16 @@
           "bin/placeholder/DatabaseControllerLib.dll": {}
         }
       },
+      "SecureStringExtentionsLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SecureStringExtentionsLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SecureStringExtentionsLib.dll": {}
+        }
+      },
       "Validation/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3292,6 +3302,11 @@
       "path": "../DatabaseControllerLib/DatabaseControllerLib.csproj",
       "msbuildProject": "../DatabaseControllerLib/DatabaseControllerLib.csproj"
     },
+    "SecureStringExtentionsLib/1.0.0": {
+      "type": "project",
+      "path": "../SecureStringExtentionsLib/SecureStringExtentionsLib.csproj",
+      "msbuildProject": "../SecureStringExtentionsLib/SecureStringExtentionsLib.csproj"
+    },
     "Validation/1.0.0": {
       "type": "project",
       "path": "../Validation/Validation.csproj",
@@ -3306,6 +3321,7 @@
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "DatabaseControllerLib >= 1.0.0",
+      "SecureStringExtentionsLib >= 1.0.0",
       "Validation >= 1.0.0",
       "ViewModelBaseLib >= 1.0.0"
     ]
@@ -3345,6 +3361,9 @@
           "projectReferences": {
             "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\DatabaseControllerLib\\DatabaseControllerLib.csproj": {
               "projectPath": "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\DatabaseControllerLib\\DatabaseControllerLib.csproj"
+            },
+            "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\SecureStringExtentionsLib\\SecureStringExtentionsLib.csproj": {
+              "projectPath": "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\SecureStringExtentionsLib\\SecureStringExtentionsLib.csproj"
             },
             "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\Validation\\Validation.csproj": {
               "projectPath": "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\Validation\\Validation.csproj"

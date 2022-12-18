@@ -1,0 +1,12 @@
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SecureStringExtentionsLib\obj\Debug\net6.0\SecureStringExtentionsLib.csproj.AssemblyReference.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SecureStringExtentionsLib\obj\Debug\net6.0\SecureStringExtentionsLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SecureStringExtentionsLib\obj\Debug\net6.0\SecureStringExtentionsLib.AssemblyInfoInputs.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SecureStringExtentionsLib\obj\Debug\net6.0\SecureStringExtentionsLib.AssemblyInfo.cs
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SecureStringExtentionsLib\obj\Debug\net6.0\SecureStringExtentionsLib.csproj.CoreCompileInputs.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SecureStringExtentionsLib\bin\Debug\net6.0\SecureStringExtentionsLib.deps.json
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SecureStringExtentionsLib\bin\Debug\net6.0\SecureStringExtentionsLib.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SecureStringExtentionsLib\bin\Debug\net6.0\SecureStringExtentionsLib.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SecureStringExtentionsLib\obj\Debug\net6.0\SecureStringExtentionsLib.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SecureStringExtentionsLib\obj\Debug\net6.0\refint\SecureStringExtentionsLib.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SecureStringExtentionsLib\obj\Debug\net6.0\SecureStringExtentionsLib.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SecureStringExtentionsLib\obj\Debug\net6.0\ref\SecureStringExtentionsLib.dll

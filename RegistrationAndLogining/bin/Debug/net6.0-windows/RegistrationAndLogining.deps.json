@@ -9,6 +9,7 @@
       "RegistrationAndLogining/1.0.0": {
         "dependencies": {
           "DatabaseControllerLib": "1.0.0",
+          "SecureStringExtentionsLib": "1.0.0",
           "Validation": "1.0.0",
           "ViewModelBaseLib": "1.0.0"
         },
@@ -560,6 +561,11 @@
           "DatabaseControllerLib.dll": {}
         }
       },
+      "SecureStringExtentionsLib/1.0.0": {
+        "runtime": {
+          "SecureStringExtentionsLib.dll": {}
+        }
+      },
       "Validation/1.0.0": {
         "runtime": {
           "Validation.dll": {}
@@ -1023,6 +1029,11 @@
       "sha512": ""
     },
     "DatabaseControllerLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SecureStringExtentionsLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -8,11 +8,6 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="RegistrationPage">
-    <Page.DataContext>
-        <fd:RegistrationPageViewModel>
-            
-        </fd:RegistrationPageViewModel>
-    </Page.DataContext>
 
     <Grid Background="White">
 
@@ -61,6 +56,17 @@
                    FontSize="{StaticResource InputFieldHeader}" 
                    FontWeight="Bold" />
 
+            
+            <!--<Label x:Name="LabelPass2" Grid.Row="6" Grid.Column="3" HorizontalContentAlignment="Right"
+                   VerticalContentAlignment="Bottom" FontFamily="Arial Narrow" 
+                   FontWeight="Bold" Foreground="OrangeRed"
+                   Panel.ZIndex="1"/>
+            
+            <Label x:Name="LabelPass1" Grid.Row="4" Grid.Column="3" HorizontalContentAlignment="Right"
+                   VerticalContentAlignment="Bottom" FontFamily="Arial Narrow" 
+                   FontWeight="Bold" Foreground="OrangeRed"
+                   Panel.ZIndex="1"/>-->
+
             <!--#endregion-->
 
             <!--#region TextBoxes-->
@@ -92,12 +98,14 @@
                 </TextBox.Text>
             </TextBox>
 
-            <PasswordBox Grid.Column="3" Grid.Row="4" 
+            <PasswordBox x:Name="P1"  Grid.Column="3" Grid.Row="4" 
                      FontSize="{StaticResource InputFieldHeader}" Background="#FFE9E9E9"
-                     ></PasswordBox>
+                         LostFocus="P1_LostFocus"
+                ></PasswordBox>
 
-            <PasswordBox Grid.Column="3" Grid.Row="6" 
+            <PasswordBox x:Name="P2" Grid.Column="3" Grid.Row="6" 
                      FontSize="{StaticResource InputFieldHeader}" Background="#FFE9E9E9"
+                         LostFocus="P2_LostFocus"
                      ></PasswordBox>
 
             <!--#endregion-->

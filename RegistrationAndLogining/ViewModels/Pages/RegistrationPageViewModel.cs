@@ -6,6 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using ViewModelBaseLib.VM;
 using Validation;
+using System.Security;
+using System.Windows;
+using SecureStringExtentionsLib;
 
 namespace RegistrationAndLogining.ViewModels.Pages
 {
@@ -18,6 +21,10 @@ namespace RegistrationAndLogining.ViewModels.Pages
         DbController dbController;
 
         string m_email;
+
+        SecureString m_pass1;
+
+        SecureString m_pass2;
 
         #endregion
 
@@ -48,6 +55,8 @@ namespace RegistrationAndLogining.ViewModels.Pages
             dbController = new DbController();
 
             m_email = string.Empty;
+
+            
         }
 
         #endregion
@@ -103,8 +112,36 @@ namespace RegistrationAndLogining.ViewModels.Pages
         #endregion
 
         #region Methods
+        
+        /// <summary>
+        /// Set password field according to the number
+        /// number is from 1 to 2
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="number"></param>
+        public void SetPass(SecureString value, byte number)
+        {
+            if (number == 1)
+            {
+                m_pass1 = value;
+            }
+            else
+            {
+                m_pass2 = value;
+            }
+        }
 
-
+        public void ComparePasswords()
+        {
+            if (m_pass1.Compare(m_pass2))
+            {
+                MessageBox.Show("Passwords are equale");
+            }
+            else
+            {
+                MessageBox.Show("Passwords aren't equale");
+            }
+        }
 
         #endregion
     }

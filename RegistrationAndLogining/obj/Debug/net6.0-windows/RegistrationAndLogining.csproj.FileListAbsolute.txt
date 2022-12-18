@@ -72,3 +72,5 @@ C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\b
 C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\DataBase.pdb
 C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\Validation.dll
 C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\Validation.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\SecureStringExtentionsLib.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\SecureStringExtentionsLib.pdb
