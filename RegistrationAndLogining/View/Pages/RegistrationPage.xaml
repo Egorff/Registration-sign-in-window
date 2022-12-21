@@ -57,15 +57,15 @@
                    FontWeight="Bold" />
 
             
-            <!--<Label x:Name="LabelPass2" Grid.Row="6" Grid.Column="3" HorizontalContentAlignment="Right"
+            <Label x:Name="LabelPass2" Grid.Row="6" Grid.Column="3" HorizontalContentAlignment="Right"
                    VerticalContentAlignment="Bottom" FontFamily="Arial Narrow" 
                    FontWeight="Bold" Foreground="OrangeRed"
-                   Panel.ZIndex="1"/>
+                   Panel.ZIndex="1" Content="" Margin="150,20,0,0"/>
             
             <Label x:Name="LabelPass1" Grid.Row="4" Grid.Column="3" HorizontalContentAlignment="Right"
                    VerticalContentAlignment="Bottom" FontFamily="Arial Narrow" 
-                   FontWeight="Bold" Foreground="OrangeRed"
-                   Panel.ZIndex="1"/>-->
+                   FontWeight="Bold" Foreground="OrangeRed" Margin="150,20,0,0"
+                   Panel.ZIndex="1"/>
 
             <!--#endregion-->
 
@@ -99,20 +99,20 @@
             </TextBox>
 
             <PasswordBox x:Name="P1"  Grid.Column="3" Grid.Row="4" 
-                     FontSize="{StaticResource InputFieldHeader}" Background="#FFE9E9E9"
-                         LostFocus="P1_LostFocus"
-                ></PasswordBox>
+                     FontSize="{StaticResource InputFieldHeader}" 
+                         Background="#FFE9E9E9" LostFocus="P1_LostFocus_1"
+                />
 
             <PasswordBox x:Name="P2" Grid.Column="3" Grid.Row="6" 
-                     FontSize="{StaticResource InputFieldHeader}" Background="#FFE9E9E9"
-                         LostFocus="P2_LostFocus"
+                     FontSize="{StaticResource InputFieldHeader}" 
+                         Background="#FFE9E9E9" PasswordChanged="P2_PasswordChanged"
                      ></PasswordBox>
 
             <!--#endregion-->
 
 
             <Button Grid.Row="8" Grid.Column="3" Width="200"
-                    Content="Register" 
+                    Content="Register" Command="{Binding OnRegisterButtonPressed}"
                     Style="{StaticResource Button}"></Button>
         </Grid>
 

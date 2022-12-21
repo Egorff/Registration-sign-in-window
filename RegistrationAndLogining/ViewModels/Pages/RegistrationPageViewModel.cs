@@ -9,6 +9,8 @@ using Validation;
 using System.Security;
 using System.Windows;
 using SecureStringExtentionsLib;
+using System.Windows.Input;
+using ViewModelBaseLib.Command;
 
 namespace RegistrationAndLogining.ViewModels.Pages
 {
@@ -56,7 +58,13 @@ namespace RegistrationAndLogining.ViewModels.Pages
 
             m_email = string.Empty;
 
-            
+            m_ValidArray = new bool[4];
+
+            #region Init commands
+
+            OnRegisterButtonPressed = new Command(OnRegisterButtonPressedExecute, CanOnRegisterButtonPressedExecute);
+
+            #endregion
         }
 
         #endregion
@@ -75,31 +83,51 @@ namespace RegistrationAndLogining.ViewModels.Pages
                         if (string.IsNullOrEmpty(Login))
                         {
                             error = "Field is mustn't be null.";
-                        }
 
-                        if (dbController.IsLoginExists(Login))
+                            m_ValidArray[0] = false;
+                        }
+                        else
                         {
-                            error = "This login is alredy exists!";
+                            if (dbController.IsLoginExists(Login))
+                            {
+                                error = "This login is alredy exists!";
+
+                                m_ValidArray[0] = false;
+                            }
+                            else
+                            {
+                                m_ValidArray[0] = true;
+                            }
                         }
 
                         break;
 
                     case nameof(Email):
-                        if (!string.IsNullOrEmpty(Email))
+                        if (string.IsNullOrEmpty(Email))
+                        {
+                            error = "Field is mustn't be null.";
+                        }
+                        else
                         {
                             if (!Validaton.ValidateEmail(Email))
                             {
                                 error = "E-mail is wrong!";
-                            }
 
-                            if (dbController.IsEmailExists(Email))
-                            {
-                                error = "This E-mail is alredy exists!";
+                                m_ValidArray[1] = false;
                             }
-                        }
-                        else
-                        {
-                            error = "Field is mustn't be null.";
+                            else
+                            {
+                                if (dbController.IsEmailExists(Email))
+                                {
+                                    error = "This E-mail is alredy exists!";
+
+                                    m_ValidArray[1] = false;
+                                }
+                                else
+                                {
+                                    m_ValidArray[1] = true;
+                                }
+                            }
                         }
 
                         break;
@@ -113,6 +141,11 @@ namespace RegistrationAndLogining.ViewModels.Pages
 
         #region Methods
         
+        public void SetValidArray(int index, bool value)
+        {
+            m_ValidArray[index] = value;
+        }
+
         /// <summary>
         /// Set password field according to the number
         /// number is from 1 to 2
@@ -131,17 +164,30 @@ namespace RegistrationAndLogining.ViewModels.Pages
             }
         }
 
-        public void ComparePasswords()
+        public bool ComparePasswords(SecureString value)
         {
-            if (m_pass1.Compare(m_pass2))
-            {
-                MessageBox.Show("Passwords are equale");
-            }
-            else
-            {
-                MessageBox.Show("Passwords aren't equale");
-            }
+            return m_pass1.Compare(value);
         }
+
+        #region OnRegisterButtonPressed
+
+        private bool CanOnRegisterButtonPressedExecute(object p)
+        {
+            return CheckValidArray(0, 2);
+        }
+
+        private void OnRegisterButtonPressedExecute(object p)
+        {
+            
+        }
+
+        #endregion
+
+        #endregion
+
+        #region Commands
+
+        public ICommand OnRegisterButtonPressed { get; }
 
         #endregion
     }

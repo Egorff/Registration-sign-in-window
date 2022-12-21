@@ -36,5 +36,22 @@ namespace ViewModelBaseLib.VM
                 return true;
             }
         }
+
+        protected bool[] m_ValidArray;
+
+        protected bool CheckValidArray(int start, int end)
+        {
+            for (; start < end; start++)
+            {
+                if (!m_ValidArray[start])
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+
     }
 }
