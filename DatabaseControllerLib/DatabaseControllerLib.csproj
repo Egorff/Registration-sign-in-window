@@ -9,6 +9,8 @@
   <ItemGroup>
     <ProjectReference Include="..\ControllerBaseLib\ControllerBaseLib.csproj" />
     <ProjectReference Include="..\DataBase\DataBase.csproj" />
+    <ProjectReference Include="..\SecureStringExtentionsLib\SecureStringExtentionsLib.csproj" />
+    <ProjectReference Include="..\SHA512\SHA512.csproj" />
   </ItemGroup>
 
 </Project>

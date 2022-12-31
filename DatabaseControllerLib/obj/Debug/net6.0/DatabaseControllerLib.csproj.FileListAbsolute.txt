@@ -15,3 +15,7 @@ C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\obj
 C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\obj\Debug\net6.0\refint\DatabaseControllerLib.dll
 C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\obj\Debug\net6.0\DatabaseControllerLib.pdb
 C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\obj\Debug\net6.0\ref\DatabaseControllerLib.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\bin\Debug\net6.0\SecureStringExtentionsLib.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\bin\Debug\net6.0\SHA512.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\bin\Debug\net6.0\SecureStringExtentionsLib.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\bin\Debug\net6.0\SHA512.pdb

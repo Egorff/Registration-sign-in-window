@@ -37,9 +37,9 @@ namespace ViewModelBaseLib.VM
             }
         }
 
-        protected bool[] m_ValidArray;
+        public bool[] m_ValidArray;
 
-        protected bool CheckValidArray(int start, int end)
+        public bool CheckValidArray(int start, int end)
         {
             for (; start < end; start++)
             {

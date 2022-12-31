@@ -9,7 +9,9 @@
       "DatabaseControllerLib/1.0.0": {
         "dependencies": {
           "ControllerBaseLib": "1.0.0",
-          "DataBase": "1.0.0"
+          "DataBase": "1.0.0",
+          "SHA512": "1.0.0",
+          "SecureStringExtentionsLib": "1.0.0"
         },
         "runtime": {
           "DatabaseControllerLib.dll": {}
@@ -624,6 +626,16 @@
         "runtime": {
           "DataBase.dll": {}
         }
+      },
+      "SecureStringExtentionsLib/1.0.0": {
+        "runtime": {
+          "SecureStringExtentionsLib.dll": {}
+        }
+      },
+      "SHA512/1.0.0": {
+        "runtime": {
+          "SHA512.dll": {}
+        }
       }
     }
   },
@@ -1073,6 +1085,16 @@
       "sha512": ""
     },
     "DataBase/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SecureStringExtentionsLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SHA512/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

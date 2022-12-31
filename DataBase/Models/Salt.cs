@@ -40,5 +40,10 @@ namespace DataBase.Models
         }
 
         #endregion
+
+        public byte[] ToBytes(Encoding enc)
+        {
+            return enc.GetBytes(SaltEntity);
+        }
     }
 }

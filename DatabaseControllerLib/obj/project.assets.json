@@ -1070,6 +1070,26 @@
         "runtime": {
           "bin/placeholder/DataBase.dll": {}
         }
+      },
+      "SecureStringExtentionsLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SecureStringExtentionsLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SecureStringExtentionsLib.dll": {}
+        }
+      },
+      "SHA512/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SHA512.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SHA512.dll": {}
+        }
       }
     }
   },
@@ -3249,12 +3269,24 @@
       "type": "project",
       "path": "../DataBase/DataBase.csproj",
       "msbuildProject": "../DataBase/DataBase.csproj"
+    },
+    "SecureStringExtentionsLib/1.0.0": {
+      "type": "project",
+      "path": "../SecureStringExtentionsLib/SecureStringExtentionsLib.csproj",
+      "msbuildProject": "../SecureStringExtentionsLib/SecureStringExtentionsLib.csproj"
+    },
+    "SHA512/1.0.0": {
+      "type": "project",
+      "path": "../SHA512/SHA512.csproj",
+      "msbuildProject": "../SHA512/SHA512.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "ControllerBaseLib >= 1.0.0",
-      "DataBase >= 1.0.0"
+      "DataBase >= 1.0.0",
+      "SHA512 >= 1.0.0",
+      "SecureStringExtentionsLib >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3295,6 +3327,12 @@
             },
             "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\DataBase\\DataBase.csproj": {
               "projectPath": "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\DataBase\\DataBase.csproj"
+            },
+            "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\SecureStringExtentionsLib\\SecureStringExtentionsLib.csproj": {
+              "projectPath": "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\SecureStringExtentionsLib\\SecureStringExtentionsLib.csproj"
+            },
+            "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\SHA512\\SHA512.csproj": {
+              "projectPath": "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\SHA512\\SHA512.csproj"
             }
           }
         }

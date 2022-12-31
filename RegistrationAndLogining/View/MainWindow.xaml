@@ -23,7 +23,10 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Frame Grid.Row="2" Content="{Binding FrameContent, UpdateSourceTrigger=PropertyChanged}" NavigationUIVisibility="Hidden"></Frame>
+        <Frame Grid.Row="2" 
+               Content="{Binding FrameContent, 
+            UpdateSourceTrigger=PropertyChanged}"
+               NavigationUIVisibility="Hidden" Navigated="Frame_Navigated"></Frame>
 
         
         <Grid Grid.Row="1">

@@ -1,4 +1,5 @@
-﻿using RegistrationAndLogining.ViewModels.Pages;
+﻿using Accessibility;
+using RegistrationAndLogining.ViewModels.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ViewModelBaseLib.Command;
 using ViewModelBaseLib.VM;
 
 namespace RegistrationAndLogining.View.Pages
@@ -32,6 +34,8 @@ namespace RegistrationAndLogining.View.Pages
 
             this.DataContext = viewModel;
 
+            viewModel.OnRegistrationFinished += ViewModel_OnRegistrationFinished;
+
             if (!CheckPass(P1))
             {
                 P1.BorderBrush = Brushes.OrangeRed;
@@ -49,6 +53,13 @@ namespace RegistrationAndLogining.View.Pages
 
                 LabelPass2.Content = "Password mustn't be null";
             }
+        }
+
+        private void ViewModel_OnRegistrationFinished()
+        {
+            P1.Clear();
+
+            P2.Clear();
         }
 
         //private void P2_LostFocus(object sender, RoutedEventArgs e)
@@ -80,7 +91,6 @@ namespace RegistrationAndLogining.View.Pages
         {
             if (pb.Password.Length == 0)
             {
-
                 return false;
             }
 
@@ -98,6 +108,8 @@ namespace RegistrationAndLogining.View.Pages
                     P2.BorderBrush = Brushes.OrangeRed;
 
                     P2.BorderThickness = new Thickness(4);
+
+                    viewModel.SetValidArray(3, false);
                 }
                 else
                 {
@@ -108,6 +120,8 @@ namespace RegistrationAndLogining.View.Pages
                     P2.BorderThickness = new Thickness(2);
 
                     viewModel.SetPass(this.P2.SecurePassword, 2);
+
+                    viewModel.SetValidArray(3, true);
                 }
             }
             else
@@ -117,6 +131,8 @@ namespace RegistrationAndLogining.View.Pages
                 P2.BorderBrush = Brushes.OrangeRed;
 
                 P2.BorderThickness = new Thickness(4);
+
+                viewModel.SetValidArray(3, false);
             }
         }
 
@@ -131,6 +147,8 @@ namespace RegistrationAndLogining.View.Pages
                 P1.BorderBrush = Brushes.Green;
 
                 P1.BorderThickness = new Thickness(2);
+
+                viewModel.SetValidArray(2, true);
             }
             else
             {
@@ -139,7 +157,14 @@ namespace RegistrationAndLogining.View.Pages
                 P1.BorderBrush = Brushes.OrangeRed;
 
                 P1.BorderThickness = new Thickness(4);
+
+                viewModel.SetValidArray(2, false);
             }
         }
+
+        //private void Button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    MessageBox.Show("You have successfully registered.");
+        //}
     }
 }

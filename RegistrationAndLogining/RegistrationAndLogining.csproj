@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DatabaseControllerLib\DatabaseControllerLib.csproj" />
     <ProjectReference Include="..\SecureStringExtentionsLib\SecureStringExtentionsLib.csproj" />
     <ProjectReference Include="..\Validation\Validation.csproj" />

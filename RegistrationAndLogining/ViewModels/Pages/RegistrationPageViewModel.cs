@@ -11,6 +11,7 @@ using System.Windows;
 using SecureStringExtentionsLib;
 using System.Windows.Input;
 using ViewModelBaseLib.Command;
+using RegistrationAndLogining.View.Pages;
 
 namespace RegistrationAndLogining.ViewModels.Pages
 {
@@ -27,6 +28,12 @@ namespace RegistrationAndLogining.ViewModels.Pages
         SecureString m_pass1;
 
         SecureString m_pass2;
+
+        #endregion
+
+        #region Events
+
+        public event Action OnRegistrationFinished;
 
         #endregion
 
@@ -56,6 +63,8 @@ namespace RegistrationAndLogining.ViewModels.Pages
 
             dbController = new DbController();
 
+            dbController.OperationFinished += DbController_OperationFinished; // Подписываемся на это событие
+
             m_email = string.Empty;
 
             m_ValidArray = new bool[4];
@@ -65,6 +74,50 @@ namespace RegistrationAndLogining.ViewModels.Pages
             OnRegisterButtonPressed = new Command(OnRegisterButtonPressedExecute, CanOnRegisterButtonPressedExecute);
 
             #endregion
+        }
+
+        private void DbController_OperationFinished(ControllerBaseLib.OperationFinishedEventArgs<DatabaseOperations> obj)
+        {
+            if (obj.State == ControllerBaseLib.Enums.OperationState.OpSucceded)
+            {
+                switch (obj.Type)
+                {
+                    case DatabaseOperations.Register:
+
+                        if (obj.OperationResult > 0)
+                        {
+                            Login = String.Empty;
+
+                            Email = String.Empty;
+
+                            m_pass1.Clear();
+
+                            m_pass2.Clear();
+
+                            m_pass1.Dispose();
+
+                            m_pass2.Dispose();
+
+                            OnRegistrationFinished?.Invoke();
+
+                            MessageBox.Show("Registration finished");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Registration failed!", "Registration and logining", MessageBoxButton.OK, MessageBoxImage.Error);
+                        }
+
+                        break;
+
+                    case DatabaseOperations.Login:
+
+                        break;
+                }
+            }
+            else if (obj.State == ControllerBaseLib.Enums.OperationState.OpFailed)
+            {
+                MessageBox.Show($"Fatal error! {obj.Exception.Message}");
+            }
         }
 
         #endregion
@@ -106,6 +159,8 @@ namespace RegistrationAndLogining.ViewModels.Pages
                         if (string.IsNullOrEmpty(Email))
                         {
                             error = "Field is mustn't be null.";
+
+                            m_ValidArray[1] = false;
                         }
                         else
                         {
@@ -173,12 +228,12 @@ namespace RegistrationAndLogining.ViewModels.Pages
 
         private bool CanOnRegisterButtonPressedExecute(object p)
         {
-            return CheckValidArray(0, 2);
+            return CheckValidArray(0, 4);
         }
 
         private void OnRegisterButtonPressedExecute(object p)
         {
-            
+            dbController.RegisterUser(Login, Email, m_pass2);
         }
 
         #endregion

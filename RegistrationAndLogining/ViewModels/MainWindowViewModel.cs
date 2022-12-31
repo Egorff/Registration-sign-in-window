@@ -31,8 +31,6 @@ namespace RegistrationAndLogining.ViewModels
         object m_FrameContent;
 
         #endregion
-        
-
 
         #region Prop
 
@@ -76,14 +74,10 @@ namespace RegistrationAndLogining.ViewModels
 
             OnLoginSwitchButtonPressed = new Command(OnLoginSwitchButtonPressedExecute, CanOnLoginSwitchButtonPressedExecute);
 
-            
-
             #endregion
         }
 
         #endregion
-
-
 
         #region Methods
 

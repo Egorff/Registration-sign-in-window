@@ -1,0 +1,12 @@
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SHA512\bin\Debug\net6.0\SHA512.deps.json
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SHA512\bin\Debug\net6.0\SHA512.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SHA512\bin\Debug\net6.0\SHA512.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SHA512\obj\Debug\net6.0\SHA512.csproj.AssemblyReference.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SHA512\obj\Debug\net6.0\SHA512.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SHA512\obj\Debug\net6.0\SHA512.AssemblyInfoInputs.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SHA512\obj\Debug\net6.0\SHA512.AssemblyInfo.cs
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SHA512\obj\Debug\net6.0\SHA512.csproj.CoreCompileInputs.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SHA512\obj\Debug\net6.0\SHA512.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SHA512\obj\Debug\net6.0\refint\SHA512.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SHA512\obj\Debug\net6.0\SHA512.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\SHA512\obj\Debug\net6.0\ref\SHA512.dll

@@ -25,8 +25,6 @@ namespace DataBase.Models
 
         public string NormalizedEmail { get; set; }
 
-        [MaxLength(20, ErrorMessage = "max length = 20")]
-        [MinLength(10, ErrorMessage = "min length = 10")]
         [Required(ErrorMessage = "Property password mustn`t be null.")]
         public string Password { get; set; }
 
