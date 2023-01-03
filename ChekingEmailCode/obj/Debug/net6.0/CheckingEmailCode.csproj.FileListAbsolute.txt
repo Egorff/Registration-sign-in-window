@@ -1,0 +1,15 @@
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ChekingEmailCode\bin\Debug\net6.0\CheckingEmailCode.deps.json
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ChekingEmailCode\bin\Debug\net6.0\CheckingEmailCode.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ChekingEmailCode\bin\Debug\net6.0\CheckingEmailCode.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ChekingEmailCode\obj\Debug\net6.0\CheckingEmailCode.csproj.AssemblyReference.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ChekingEmailCode\obj\Debug\net6.0\CheckingEmailCode.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ChekingEmailCode\obj\Debug\net6.0\CheckingEmailCode.AssemblyInfoInputs.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ChekingEmailCode\obj\Debug\net6.0\CheckingEmailCode.AssemblyInfo.cs
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ChekingEmailCode\obj\Debug\net6.0\CheckingEmailCode.csproj.CoreCompileInputs.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ChekingEmailCode\obj\Debug\net6.0\CheckingEmailCode.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ChekingEmailCode\obj\Debug\net6.0\refint\CheckingEmailCode.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ChekingEmailCode\obj\Debug\net6.0\CheckingEmailCode.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ChekingEmailCode\obj\Debug\net6.0\ref\CheckingEmailCode.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ChekingEmailCode\bin\Debug\net6.0\ControllerBaseLib.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ChekingEmailCode\bin\Debug\net6.0\ControllerBaseLib.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\ChekingEmailCode\obj\Debug\net6.0\CheckingEmailCode.csproj.CopyComplete

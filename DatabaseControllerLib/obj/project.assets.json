@@ -1047,6 +1047,19 @@
           }
         }
       },
+      "CheckingEmailCode/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ControllerBaseLib": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CheckingEmailCode.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CheckingEmailCode.dll": {}
+        }
+      },
       "ControllerBaseLib/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3260,6 +3273,11 @@
         "version.txt"
       ]
     },
+    "CheckingEmailCode/1.0.0": {
+      "type": "project",
+      "path": "../ChekingEmailCode/CheckingEmailCode.csproj",
+      "msbuildProject": "../ChekingEmailCode/CheckingEmailCode.csproj"
+    },
     "ControllerBaseLib/1.0.0": {
       "type": "project",
       "path": "../ControllerBaseLib/ControllerBaseLib.csproj",
@@ -3283,6 +3301,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CheckingEmailCode >= 1.0.0",
       "ControllerBaseLib >= 1.0.0",
       "DataBase >= 1.0.0",
       "SHA512 >= 1.0.0",
@@ -3322,6 +3341,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\ChekingEmailCode\\CheckingEmailCode.csproj": {
+              "projectPath": "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\ChekingEmailCode\\CheckingEmailCode.csproj"
+            },
             "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\ControllerBaseLib\\ControllerBaseLib.csproj": {
               "projectPath": "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\ControllerBaseLib\\ControllerBaseLib.csproj"
             },

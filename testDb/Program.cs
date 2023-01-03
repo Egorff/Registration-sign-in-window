@@ -40,15 +40,17 @@ MailMessage mailMessage = new MailMessage();
 
 SmtpClient smtpClient = new SmtpClient();
 
+Random r = new Random();
+
 mailMessage.From = new MailAddress("wrestler000ua@gmail.com");
 
 mailMessage.To.Add(new MailAddress("egorolinek@gmail.com"));
 
-mailMessage.Subject = "Test";
+mailMessage.Subject = r.Next(1000, 9999).ToString();
 
 mailMessage.IsBodyHtml = true;
 
-string msg = "<font> Test message </font>";
+string msg = r.Next(1000, 9999).ToString();
 
 mailMessage.Body = msg;
 

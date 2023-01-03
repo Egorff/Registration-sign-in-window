@@ -53,6 +53,8 @@ namespace RegistrationAndLogining.View.Pages
 
                 LabelPass2.Content = "Password mustn't be null";
             }
+
+            //TextBlockYourEmail.Text = EmailTextBlock.Text;
         }
 
         private void ViewModel_OnRegistrationFinished()

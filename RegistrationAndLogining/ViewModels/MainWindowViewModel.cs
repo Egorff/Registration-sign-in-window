@@ -1,8 +1,10 @@
 ﻿using RegistrationAndLogining.View.Pages;
+using RegistrationAndLogining.ViewModels.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata;
+using System.Runtime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -44,8 +46,6 @@ namespace RegistrationAndLogining.ViewModels
 
         #endregion
 
-
-
         #region Ctor
 
         public MainWindowViewModel()
@@ -55,6 +55,8 @@ namespace RegistrationAndLogining.ViewModels
             m_RegPage = new RegistrationPage();
 
             m_LoginPage = new LoginPage();
+
+            m_RagistrationPageViewModel = new RegistrationPageViewModel();
 
             m_FrameContent = new object();
 
@@ -124,9 +126,12 @@ namespace RegistrationAndLogining.ViewModels
 
         #endregion
 
+        #region OnCheckMailPageButtonPressed
+
+
         #endregion
 
-
+        #endregion
 
         #region Pages
 
@@ -134,13 +139,15 @@ namespace RegistrationAndLogining.ViewModels
 
         LoginPage m_LoginPage;
 
+        RegistrationPageViewModel m_RagistrationPageViewModel;
+
         #endregion
-
-
 
         #region Commands
 
         public ICommand OnLoginSwitchButtonPressed { get; set; }
+
+        public ICommand OnCheckMailPageButtonPressed { get; set; }
 
         #endregion
     }

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "ControllerBaseLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ControllerBaseLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ControllerBaseLib.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ControllerBaseLib/1.0.0": {
+      "type": "project",
+      "path": "../ControllerBaseLib/ControllerBaseLib.csproj",
+      "msbuildProject": "../ControllerBaseLib/ControllerBaseLib.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "ControllerBaseLib >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Kubik\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\ControllerBaseLib\\ControllerBaseLib.csproj": {
+              "projectPath": "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\ControllerBaseLib\\ControllerBaseLib.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

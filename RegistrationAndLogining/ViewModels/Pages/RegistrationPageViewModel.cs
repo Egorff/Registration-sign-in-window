@@ -12,6 +12,10 @@ using SecureStringExtentionsLib;
 using System.Windows.Input;
 using ViewModelBaseLib.Command;
 using RegistrationAndLogining.View.Pages;
+using System.Security.Cryptography.X509Certificates;
+using CheckingEmailCode;
+using System.Diagnostics.Eventing.Reader;
+using System.Security.AccessControl;
 
 namespace RegistrationAndLogining.ViewModels.Pages
 {
@@ -19,15 +23,25 @@ namespace RegistrationAndLogining.ViewModels.Pages
     {
         #region Fields
 
+        CheckingEmailCodeClass m_checkingEmailCode;
+
         string m_login;
+
+        string m_code;
+
+        int[] m_intCode;
 
         DbController dbController;
 
-        string m_email;
+        public string m_email;
 
         SecureString m_pass1;
 
         SecureString m_pass2;
+
+        Visibility m_caseRegisterVisibility;
+
+        Visibility m_caseCheckEmailVisibility;
 
         #endregion
 
@@ -53,27 +67,86 @@ namespace RegistrationAndLogining.ViewModels.Pages
             set => Set(ref m_email, value);
         }
 
+        public string Code { get => m_code; set => Set(ref m_code, value); }
+
+        public Visibility CaseRegisterVisibility { get => m_caseRegisterVisibility; set => Set(ref m_caseRegisterVisibility, value); }
+
+        public Visibility CaseCheckEmailVisibility { get => m_caseCheckEmailVisibility; set => Set(ref m_caseCheckEmailVisibility, value); }
+
         #endregion
 
         #region Ctor
 
         public RegistrationPageViewModel()
         {
+            m_code = String.Empty;
+
+            m_caseCheckEmailVisibility = Visibility.Hidden;
+
+            m_caseRegisterVisibility = Visibility.Visible;
+
             m_login = string.Empty;
 
+            m_checkingEmailCode = new CheckingEmailCodeClass(587, "smtp.gmail.com",  smtpDeliveryMethod:System.Net.Mail.SmtpDeliveryMethod.Network,
+                new System.Net.Mail.MailAddress("Wrestler000ua@gmail.com"), true, false, new System.Net.NetworkCredential("wrestler000ua@gmail.com", "qilazsonycggwzlg"));
+
             dbController = new DbController();
+
+            m_checkingEmailCode.OperationFinished += M_checkingEmailCode_OperationFinished;
 
             dbController.OperationFinished += DbController_OperationFinished; // Подписываемся на это событие
 
             m_email = string.Empty;
 
-            m_ValidArray = new bool[4];
+            m_ValidArray = new bool[5];
 
             #region Init commands
 
             OnRegisterButtonPressed = new Command(OnRegisterButtonPressedExecute, CanOnRegisterButtonPressedExecute);
 
+            OnCheckCodeButtonPressed = new Command(OnCheckCodeButtonPressedExecute, CanOnCheckCodeButtonPressedExecute);
+
+            OnWrongEmailButtonPressed = new Command(OnWrongEmailButtonPressedExecute, CanOnWrongEmailButtonPressedExecute);
+
             #endregion
+        }
+
+        private void M_checkingEmailCode_OperationFinished(ControllerBaseLib.OperationFinishedEventArgs<CheckingEmailOperations> obj)
+        {
+            if (obj.State == ControllerBaseLib.Enums.OperationState.OpSucceded)
+            {
+                CaseCheckEmailVisibility = Visibility.Visible;
+
+                CaseRegisterVisibility = Visibility.Hidden;
+
+                m_intCode = obj.OperationResult;
+            }
+            else if (obj.State == ControllerBaseLib.Enums.OperationState.OpFailed)
+            {
+                MessageBox.Show($"Fatal error! {obj.Exception.Message}");
+            }
+            else
+            {
+                
+            }
+        }
+
+        public bool CheckCode(int[] code, string codee)
+        {
+            if (code.Length != codee.Length)
+            {
+                return false;
+            }
+
+            for (int i = 0; i < code.Length; i++)
+            {
+                if ((double)code[i] != Char.GetNumericValue(codee[i]))
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
 
         private void DbController_OperationFinished(ControllerBaseLib.OperationFinishedEventArgs<DatabaseOperations> obj)
@@ -97,6 +170,10 @@ namespace RegistrationAndLogining.ViewModels.Pages
                             m_pass1.Dispose();
 
                             m_pass2.Dispose();
+
+                            m_caseRegisterVisibility = Visibility.Visible;
+
+                            m_caseCheckEmailVisibility = Visibility.Hidden;
 
                             OnRegistrationFinished?.Invoke();
 
@@ -233,7 +310,44 @@ namespace RegistrationAndLogining.ViewModels.Pages
 
         private void OnRegisterButtonPressedExecute(object p)
         {
-            dbController.RegisterUser(Login, Email, m_pass2);
+            m_checkingEmailCode.CheckEmailCode(Email, true);
+        }
+
+        #endregion
+
+        #region OnCheckCodeButtonPressed
+
+        public bool CanOnCheckCodeButtonPressedExecute(object p)
+        {
+            return true;
+        }
+
+        public void OnCheckCodeButtonPressedExecute(object p)
+        {
+            if (!CheckCode(m_intCode, m_code))
+            {
+                MessageBox.Show("You has input wrong code.");
+            }
+            else
+            {
+                dbController.RegisterUser(Login, Email, m_pass2);
+            }
+        }
+
+        #endregion
+
+        #region OnWrongEmailButtonPressed
+
+        public bool CanOnWrongEmailButtonPressedExecute(object p)
+        {
+            return true;
+        }
+
+        public void OnWrongEmailButtonPressedExecute(object p)
+        {
+            CaseCheckEmailVisibility = Visibility.Hidden;
+
+            CaseRegisterVisibility = Visibility.Visible;
         }
 
         #endregion
@@ -242,7 +356,11 @@ namespace RegistrationAndLogining.ViewModels.Pages
 
         #region Commands
 
-        public ICommand OnRegisterButtonPressed { get; }
+        public ICommand OnCheckCodeButtonPressed { get; set; }
+
+        public ICommand OnRegisterButtonPressed { get; set; }
+
+        public ICommand OnWrongEmailButtonPressed { get; set; }
 
         #endregion
     }

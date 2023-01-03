@@ -1144,6 +1144,19 @@
           }
         }
       },
+      "CheckingEmailCode/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ControllerBaseLib": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CheckingEmailCode.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CheckingEmailCode.dll": {}
+        }
+      },
       "ControllerBaseLib/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1172,6 +1185,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "CheckingEmailCode": "1.0.0",
           "ControllerBaseLib": "1.0.0",
           "DataBase": "1.0.0",
           "SHA512": "1.0.0",
@@ -3547,6 +3561,11 @@
         "version.txt"
       ]
     },
+    "CheckingEmailCode/1.0.0": {
+      "type": "project",
+      "path": "../ChekingEmailCode/CheckingEmailCode.csproj",
+      "msbuildProject": "../ChekingEmailCode/CheckingEmailCode.csproj"
+    },
     "ControllerBaseLib/1.0.0": {
       "type": "project",
       "path": "../ControllerBaseLib/ControllerBaseLib.csproj",
@@ -3585,6 +3604,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "CheckingEmailCode >= 1.0.0",
       "DatabaseControllerLib >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.1",
       "SecureStringExtentionsLib >= 1.0.0",
@@ -3625,6 +3645,9 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
+            "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\ChekingEmailCode\\CheckingEmailCode.csproj": {
+              "projectPath": "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\ChekingEmailCode\\CheckingEmailCode.csproj"
+            },
             "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\DatabaseControllerLib\\DatabaseControllerLib.csproj": {
               "projectPath": "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\DatabaseControllerLib\\DatabaseControllerLib.csproj"
             },

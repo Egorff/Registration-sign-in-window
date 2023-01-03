@@ -19,3 +19,5 @@ C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\bin
 C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\bin\Debug\net6.0\SHA512.dll
 C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\bin\Debug\net6.0\SecureStringExtentionsLib.pdb
 C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\bin\Debug\net6.0\SHA512.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\bin\Debug\net6.0\CheckingEmailCode.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\DatabaseControllerLib\bin\Debug\net6.0\CheckingEmailCode.pdb

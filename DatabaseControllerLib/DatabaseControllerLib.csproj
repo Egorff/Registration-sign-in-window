@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ChekingEmailCode\CheckingEmailCode.csproj" />
     <ProjectReference Include="..\ControllerBaseLib\ControllerBaseLib.csproj" />
     <ProjectReference Include="..\DataBase\DataBase.csproj" />
     <ProjectReference Include="..\SecureStringExtentionsLib\SecureStringExtentionsLib.csproj" />

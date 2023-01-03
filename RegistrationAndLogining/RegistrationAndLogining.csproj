@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ChekingEmailCode\CheckingEmailCode.csproj" />
     <ProjectReference Include="..\DatabaseControllerLib\DatabaseControllerLib.csproj" />
     <ProjectReference Include="..\SecureStringExtentionsLib\SecureStringExtentionsLib.csproj" />
     <ProjectReference Include="..\Validation\Validation.csproj" />

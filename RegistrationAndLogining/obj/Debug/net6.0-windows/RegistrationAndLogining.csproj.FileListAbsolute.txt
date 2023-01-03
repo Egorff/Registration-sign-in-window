@@ -83,3 +83,5 @@ C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\b
 C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
 C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\System.Text.Json.dll
 C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\CheckingEmailCode.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\CheckingEmailCode.pdb

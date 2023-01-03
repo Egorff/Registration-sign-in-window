@@ -7,9 +7,9 @@
     <Application.Resources>
         <Style x:Key="Button" TargetType="Button">
             <Style.Setters>
-                <Setter Property="FontSize" Value="25">
-                    
-                </Setter>
+                <Setter Property="FontSize" Value="25"/>
+
+                <Setter Property="Width" Value="180"/>
             </Style.Setters>
         </Style>
 
@@ -53,5 +53,17 @@
             
             
         </Style>
+
+        <Style x:Key="TextBlock" TargetType="TextBlock">
+            
+            <Style.Setters>
+
+                <Setter Property="FontSize" Value="16"/>
+
+            </Style.Setters>
+        
+        </Style>
+        
     </Application.Resources>
+    
 </Application>

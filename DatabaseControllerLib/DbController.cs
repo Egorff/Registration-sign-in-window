@@ -73,6 +73,7 @@ namespace DatabaseControllerLib
 
                 return usersDb.SaveChanges();
             });
+            
         }
 
         #endregion
