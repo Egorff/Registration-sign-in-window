@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -12,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using RegistrationAndLogining.ViewModels.Pages;
+using ViewModelBaseLib.VM;
 
 namespace RegistrationAndLogining.View.Pages
 {
@@ -20,9 +23,68 @@ namespace RegistrationAndLogining.View.Pages
     /// </summary>
     public partial class LoginPage : Page
     {
+        #region Fields
+
+        LoginPageViewModel m_loginPageViewModel;
+
+        #endregion
+
         public LoginPage()
         {
             InitializeComponent();
+
+            m_loginPageViewModel = new LoginPageViewModel();
+
+            this.DataContext = m_loginPageViewModel;
+
+            if (!CheckPass(P1))
+            {
+                P1.BorderBrush = Brushes.OrangeRed;
+
+                P1.BorderThickness = new Thickness(4);
+
+                LabelPass1.Content = "Pssword mustn`t be null.";
+            }
+        }
+
+        #region Methods
+
+        public bool CheckPass(PasswordBox pb)
+        {
+            if (pb.Password.Length == 0)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        #endregion
+
+        private void Grid_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (CheckPass(P1))
+            {
+                m_loginPageViewModel.SetPass(this.P1.SecurePassword);
+
+                LabelPass1.Content = "";
+
+                P1.BorderBrush = Brushes.Green;
+
+                P1.BorderThickness = new Thickness(2);
+
+                m_loginPageViewModel.SetValidArray(1, true);
+            }
+            else
+            {
+                LabelPass1.Content = "Password mustn't be null";
+
+                P1.BorderBrush = Brushes.OrangeRed;
+
+                P1.BorderThickness = new Thickness(4);
+
+                m_loginPageViewModel.SetValidArray(1, false);
+            }
         }
     }
 }

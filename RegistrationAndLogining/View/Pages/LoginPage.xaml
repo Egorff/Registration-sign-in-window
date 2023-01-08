@@ -10,7 +10,7 @@
 
     <Grid Background="White">
 
-        <Grid Grid.Row="2" Margin="0, 10, 0, 0">
+        <Grid Grid.Row="2" Margin="0, 10, 0, 0" LostFocus="Grid_LostFocus">
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="100"/>
@@ -31,7 +31,13 @@
             </Grid.RowDefinitions>
 
             <!--#region Labels-->
-            
+
+
+
+            <Label x:Name="LabelPass1" Grid.Row="3" Grid.Column="3" HorizontalContentAlignment="Right"
+                   VerticalContentAlignment="Bottom" FontFamily="Arial Narrow" 
+                   FontWeight="Bold" Foreground="OrangeRed" Margin="150,20,0,0"
+                   Panel.ZIndex="1"/>
 
             <Label Content="Login" Grid.Column="1" Grid.Row="1" HorizontalContentAlignment="Center"
                    VerticalContentAlignment="Center" FontFamily="Arial Narrow" 
@@ -43,27 +49,45 @@
                    FontSize="{StaticResource InputFieldHeader}" 
                    FontWeight="Bold" />
 
-            
+
             <!--#endregion-->
 
             <!--#region TextBoxes-->
-            
+
 
             <TextBox Grid.Column="3" Grid.Row="1" 
                      FontSize="{StaticResource InputFieldHeader}"
-                     Background="#FFE9E9E9"></TextBox>
+                     Background="#FFE9E9E9" 
+                     Style="{StaticResource InputField}">
 
-            <PasswordBox Grid.Column="3" Grid.Row="3" 
-                     FontSize="{StaticResource InputFieldHeader}" Background="#FFE9E9E9"
-                     ></PasswordBox>
-            
-            
+                <TextBox.Text>
+
+                    <Binding Path="Login"
+                             UpdateSourceTrigger="PropertyChanged"
+                             Mode="TwoWay">
+
+                        <Binding.ValidationRules>
+
+                            <DataErrorValidationRule/>
+
+                        </Binding.ValidationRules>
+
+                    </Binding>
+
+                </TextBox.Text>
+
+            </TextBox>
+
+            <PasswordBox x:Name="P1" Grid.Column="3" Grid.Row="3" 
+                     FontSize="{StaticResource InputFieldHeader}" 
+                         Background="#FFE9E9E9"/>
+
             <!--#endregion-->
 
             <Button Grid.Column="3" Grid.Row="5" Content="Sign in"
                     FontSize="{StaticResource InputFieldHeader}"
-                    Width="150"></Button>
+                    Width="150" Command="{Binding OnSignInButtonPressed}"/>
         </Grid>
 
-    </Grid>
+        </Grid>
 </Page>

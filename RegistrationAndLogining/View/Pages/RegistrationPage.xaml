@@ -147,8 +147,25 @@
 
             </Grid.ColumnDefinitions>
 
-            <TextBox x:Name="CodeTextBox" Grid.Row="2" Grid.Column="1" Background="LightGray" 
-                     Text="{Binding Code, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" HorizontalContentAlignment="Center" FontSize="27"/>
+            <TextBox x:Name="CodeTextBox" Grid.Row="2" Grid.Column="1" Background="LightGray"
+                     HorizontalContentAlignment="Center" FontSize="27"
+                     Style="{StaticResource InputField}">
+
+                <TextBox.Text>
+
+                    <Binding Path="Code" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+
+                        <Binding.ValidationRules>
+
+                            <DataErrorValidationRule/>
+
+                        </Binding.ValidationRules>
+
+                    </Binding>
+
+                </TextBox.Text>
+                
+            </TextBox>
 
             <TextBlock Grid.Column="1" Text="Please, input below code which you have got on email"
                    Style="{StaticResource TextBlock}"

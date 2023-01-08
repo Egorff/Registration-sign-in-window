@@ -85,3 +85,11 @@ C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\b
 C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\CheckingEmailCode.dll
 C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\CheckingEmailCode.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\EntityFramework.SqlServer.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\EntityFramework.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\RegistrationAndLogining\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

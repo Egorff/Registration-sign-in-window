@@ -58,7 +58,7 @@ namespace DataBase.Models
 
         public override string ToString()
         {
-            return $"{NormalizedLogin}, {NormalizedEmail}.";
+            return $"{User_Role[0]}, {Email}, {Login}.";
         }
     }
 }

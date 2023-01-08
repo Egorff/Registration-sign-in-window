@@ -24,7 +24,7 @@
                                 <Grid>
                                     <AdornedElementPlaceholder/>
                                     <TextBlock Text="{Binding [0].ErrorContent}" Foreground="OrangeRed"
-                                               VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="12"/>
+                                               VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="12" x:Name="Txt"/>
                                 </Grid>
                             </Border>
                         </ControlTemplate>
@@ -35,9 +35,7 @@
             <Style.Triggers>
                 <Trigger Property="Validation.HasError" Value="True">
                     <Trigger.Setters>
-                        <Setter Property="BorderBrush" Value="OrangeRed">
-                            
-                        </Setter>
+                        <Setter Property="BorderBrush" Value="OrangeRed"/>
                     </Trigger.Setters>
                 </Trigger>
 

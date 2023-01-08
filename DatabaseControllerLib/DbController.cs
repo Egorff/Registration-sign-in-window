@@ -1,8 +1,12 @@
-﻿using DataBase.Models;
+﻿using ControllerBaseLib.Enums;
+using DataBase.Models;
 using DataBase.Utilities;
+using Microsoft.EntityFrameworkCore;
 using SecureStringExtentionsLib;
 using SHA512;
+using System.Runtime.CompilerServices;
 using System.Security;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace DatabaseControllerLib
@@ -17,12 +21,6 @@ namespace DatabaseControllerLib
         #region Fields
 
         UsersDb usersDb;
-
-        #endregion
-
-        #region Properties
-
-
 
         #endregion
 
@@ -73,7 +71,36 @@ namespace DatabaseControllerLib
 
                 return usersDb.SaveChanges();
             });
-            
+        }
+
+        public void LoginUser(string login, SecureString password)
+        {
+            ExecuteFunc(DatabaseOperations.Login, () =>
+            {
+                var u = (from p in usersDb.User where p.NormalizedLogin.Equals(login.ToUpper())
+                         select p).Include(y => y.Salt).Include(t => t.User_Role).First();
+
+                var role = (from p in usersDb.Role where p.Id == u.User_Role[0].RoleId select p).First();
+
+                u.User_Role[0].Role = role;
+
+                //var sUi = (from p in usersDb.Salt where p.UserId.Equals(u.Id) select p).First();
+
+                //var RoleId = (from p in usersDb.Users_Role where p.UserId.Equals(u.Id) select p.RoleId).First();
+
+                //var role = (from p in usersDb.Role where p.Id == RoleId select p.RoleName).First();
+
+                var pass = password.GetBytesAccordingToEncoding(new ASCIIEncoding());
+
+                var HashPass = HASH.HashPass(pass, u.Salt.ToBytes(new ASCIIEncoding()), new ASCIIEncoding());
+
+                if (u.Password.Equals(HashPass))
+                {
+                    return u;
+                }
+
+                return null;
+            });
         }
 
         #endregion

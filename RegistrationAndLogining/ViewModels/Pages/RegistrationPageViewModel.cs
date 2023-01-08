@@ -98,7 +98,7 @@ namespace RegistrationAndLogining.ViewModels.Pages
 
             m_email = string.Empty;
 
-            m_ValidArray = new bool[5];
+            m_ValidArray = new bool[6];
 
             #region Init commands
 
@@ -133,6 +133,11 @@ namespace RegistrationAndLogining.ViewModels.Pages
 
         public bool CheckCode(int[] code, string codee)
         {
+            if (string.IsNullOrEmpty(codee))
+            {
+                return false;
+            }
+
             if (code.Length != codee.Length)
             {
                 return false;
@@ -145,6 +150,8 @@ namespace RegistrationAndLogining.ViewModels.Pages
                     return false;
                 }
             }
+
+
 
             return true;
         }
@@ -171,9 +178,9 @@ namespace RegistrationAndLogining.ViewModels.Pages
 
                             m_pass2.Dispose();
 
-                            m_caseRegisterVisibility = Visibility.Visible;
+                            CaseCheckEmailVisibility = Visibility.Hidden;
 
-                            m_caseCheckEmailVisibility = Visibility.Hidden;
+                            CaseRegisterVisibility = Visibility.Visible;
 
                             OnRegistrationFinished?.Invoke();
 
@@ -263,6 +270,21 @@ namespace RegistrationAndLogining.ViewModels.Pages
                         }
 
                         break;
+
+                    case nameof(Code):
+
+                        if (!CheckCode(m_intCode, Code))
+                        {
+                            error = "Wrong input.";
+
+                            m_ValidArray[5] = false;
+                        }
+                        else
+                        {
+                            m_ValidArray[5] = true;
+                        }
+
+                        break;
                 }
 
                 return error;
@@ -319,19 +341,12 @@ namespace RegistrationAndLogining.ViewModels.Pages
 
         public bool CanOnCheckCodeButtonPressedExecute(object p)
         {
-            return true;
+            return CheckValidArray(5, 6);
         }
 
         public void OnCheckCodeButtonPressedExecute(object p)
         {
-            if (!CheckCode(m_intCode, m_code))
-            {
-                MessageBox.Show("You has input wrong code.");
-            }
-            else
-            {
-                dbController.RegisterUser(Login, Email, m_pass2);
-            }
+            dbController.RegisterUser(Login, Email, m_pass2);
         }
 
         #endregion

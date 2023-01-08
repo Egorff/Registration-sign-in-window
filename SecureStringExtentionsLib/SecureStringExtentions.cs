@@ -56,7 +56,7 @@ namespace SecureStringExtentionsLib
 
             if (str.Length == 0)
             {
-                return null; 
+                return null;
             }
 
             bytes = null;

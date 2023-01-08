@@ -24,17 +24,17 @@ namespace RegistrationAndLogining.View.Pages
     /// </summary>
     public partial class RegistrationPage : Page
     {
-        RegistrationPageViewModel viewModel;
+        RegistrationPageViewModel m_registrationPageviewModel;
 
         public RegistrationPage()
         {
             InitializeComponent();
 
-            viewModel = new RegistrationPageViewModel();
+            m_registrationPageviewModel = new RegistrationPageViewModel();
 
-            this.DataContext = viewModel;
+            this.DataContext = m_registrationPageviewModel;
 
-            viewModel.OnRegistrationFinished += ViewModel_OnRegistrationFinished;
+            m_registrationPageviewModel.OnRegistrationFinished += ViewModel_OnRegistrationFinished;
 
             if (!CheckPass(P1))
             {
@@ -103,7 +103,7 @@ namespace RegistrationAndLogining.View.Pages
         {
             if (CheckPass(P2))
             {
-                if (!viewModel.ComparePasswords(P2.SecurePassword))
+                if (!m_registrationPageviewModel.ComparePasswords(P2.SecurePassword))
                 {
                     LabelPass2.Content = "Passwords are not equale";
 
@@ -111,7 +111,7 @@ namespace RegistrationAndLogining.View.Pages
 
                     P2.BorderThickness = new Thickness(4);
 
-                    viewModel.SetValidArray(3, false);
+                    m_registrationPageviewModel.SetValidArray(3, false);
                 }
                 else
                 {
@@ -121,9 +121,9 @@ namespace RegistrationAndLogining.View.Pages
 
                     P2.BorderThickness = new Thickness(2);
 
-                    viewModel.SetPass(this.P2.SecurePassword, 2);
+                    m_registrationPageviewModel.SetPass(this.P2.SecurePassword, 2);
 
-                    viewModel.SetValidArray(3, true);
+                    m_registrationPageviewModel.SetValidArray(3, true);
                 }
             }
             else
@@ -134,7 +134,7 @@ namespace RegistrationAndLogining.View.Pages
 
                 P2.BorderThickness = new Thickness(4);
 
-                viewModel.SetValidArray(3, false);
+                m_registrationPageviewModel.SetValidArray(3, false);
             }
         }
 
@@ -142,7 +142,7 @@ namespace RegistrationAndLogining.View.Pages
         {
             if (CheckPass(P1))
             {
-                viewModel.SetPass(this.P1.SecurePassword, 1);
+                m_registrationPageviewModel.SetPass(this.P1.SecurePassword, 1);
 
                 LabelPass1.Content = "";
 
@@ -150,7 +150,7 @@ namespace RegistrationAndLogining.View.Pages
 
                 P1.BorderThickness = new Thickness(2);
 
-                viewModel.SetValidArray(2, true);
+                m_registrationPageviewModel.SetValidArray(2, true);
             }
             else
             {
@@ -160,7 +160,7 @@ namespace RegistrationAndLogining.View.Pages
 
                 P1.BorderThickness = new Thickness(4);
 
-                viewModel.SetValidArray(2, false);
+                m_registrationPageviewModel.SetValidArray(2, false);
             }
         }
 

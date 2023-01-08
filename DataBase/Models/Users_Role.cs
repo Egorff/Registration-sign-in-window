@@ -45,7 +45,7 @@ namespace DataBase.Models
 
         public override string ToString()
         {
-            return $"{User} with role {Role}.";
+            return $"Role {Role}.";
         }
 
         
