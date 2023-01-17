@@ -13,7 +13,7 @@ namespace DatabaseControllerLib
 {
     public enum DatabaseOperations
     {
-        Register = 0, Login
+        Register = 0, Login, ChangePassword
     }
 
     public class DbController : ControllerBaseLib.ControllerBase<DatabaseOperations>
@@ -102,6 +102,17 @@ namespace DatabaseControllerLib
                 return null;
             });
         }
+
+        //public void ChangePassword(SecureString password, string email)
+        //{
+        //    ExecuteFunc(DatabaseOperations.ChangePassword, () =>
+        //    {
+        //        var u = (from p in usersDb.User where p.NormalizedEmail.Equals(email.ToUpper()) select p).Include(y => y.Password).First();
+
+        //        return null;
+        //    });
+
+        //}
 
         #endregion
     }

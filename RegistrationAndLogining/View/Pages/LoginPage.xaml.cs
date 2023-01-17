@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Identity.Client;
 using RegistrationAndLogining.ViewModels.Pages;
 using ViewModelBaseLib.VM;
 
@@ -39,11 +40,11 @@ namespace RegistrationAndLogining.View.Pages
 
             if (!CheckPass(P1))
             {
+                LabelPass1.Content = "Password mustn`t be null.";
+
                 P1.BorderBrush = Brushes.OrangeRed;
 
                 P1.BorderThickness = new Thickness(4);
-
-                LabelPass1.Content = "Pssword mustn`t be null.";
             }
         }
 
@@ -65,7 +66,7 @@ namespace RegistrationAndLogining.View.Pages
         {
             if (CheckPass(P1))
             {
-                m_loginPageViewModel.SetPass(this.P1.SecurePassword);
+                m_loginPageViewModel.SetPass(this.P1.SecurePassword, 1);
 
                 LabelPass1.Content = "";
 
@@ -73,7 +74,7 @@ namespace RegistrationAndLogining.View.Pages
 
                 P1.BorderThickness = new Thickness(2);
 
-                m_loginPageViewModel.SetValidArray(1, true);
+                m_loginPageViewModel.SetValidArray(4, true);
             }
             else
             {
@@ -83,7 +84,7 @@ namespace RegistrationAndLogining.View.Pages
 
                 P1.BorderThickness = new Thickness(4);
 
-                m_loginPageViewModel.SetValidArray(1, false);
+                m_loginPageViewModel.SetValidArray(4,false);
             }
         }
     }

@@ -16,6 +16,8 @@ using System.Security.Cryptography.X509Certificates;
 using CheckingEmailCode;
 using System.Diagnostics.Eventing.Reader;
 using System.Security.AccessControl;
+using static Validation.Validaton;
+using System.Windows.Controls;
 
 namespace RegistrationAndLogining.ViewModels.Pages
 {
@@ -125,35 +127,6 @@ namespace RegistrationAndLogining.ViewModels.Pages
             {
                 MessageBox.Show($"Fatal error! {obj.Exception.Message}");
             }
-            else
-            {
-                
-            }
-        }
-
-        public bool CheckCode(int[] code, string codee)
-        {
-            if (string.IsNullOrEmpty(codee))
-            {
-                return false;
-            }
-
-            if (code.Length != codee.Length)
-            {
-                return false;
-            }
-
-            for (int i = 0; i < code.Length; i++)
-            {
-                if ((double)code[i] != Char.GetNumericValue(codee[i]))
-                {
-                    return false;
-                }
-            }
-
-
-
-            return true;
         }
 
         private void DbController_OperationFinished(ControllerBaseLib.OperationFinishedEventArgs<DatabaseOperations> obj)

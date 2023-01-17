@@ -12,6 +12,7 @@
           "DatabaseControllerLib": "1.0.0",
           "EntityFramework": "6.4.4",
           "Microsoft.EntityFrameworkCore.Design": "7.0.1",
+          "PageSwitcherLib": "1.0.0",
           "SecureStringExtentionsLib": "1.0.0",
           "Validation": "1.0.0",
           "ViewModelBaseLib": "1.0.0"
@@ -731,6 +732,11 @@
           "DatabaseControllerLib.dll": {}
         }
       },
+      "PageSwitcherLib/1.0.0": {
+        "runtime": {
+          "PageSwitcherLib.dll": {}
+        }
+      },
       "SecureStringExtentionsLib/1.0.0": {
         "runtime": {
           "SecureStringExtentionsLib.dll": {}
@@ -1293,6 +1299,11 @@
       "sha512": ""
     },
     "DatabaseControllerLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PageSwitcherLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

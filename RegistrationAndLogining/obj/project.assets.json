@@ -1306,6 +1306,19 @@
           "bin/placeholder/DatabaseControllerLib.dll": {}
         }
       },
+      "PageSwitcherLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/PageSwitcherLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PageSwitcherLib.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "SecureStringExtentionsLib/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3987,6 +4000,11 @@
       "path": "../DatabaseControllerLib/DatabaseControllerLib.csproj",
       "msbuildProject": "../DatabaseControllerLib/DatabaseControllerLib.csproj"
     },
+    "PageSwitcherLib/1.0.0": {
+      "type": "project",
+      "path": "../PageSwitcherLib/PageSwitcherLib.csproj",
+      "msbuildProject": "../PageSwitcherLib/PageSwitcherLib.csproj"
+    },
     "SecureStringExtentionsLib/1.0.0": {
       "type": "project",
       "path": "../SecureStringExtentionsLib/SecureStringExtentionsLib.csproj",
@@ -4014,6 +4032,7 @@
       "DatabaseControllerLib >= 1.0.0",
       "EntityFramework >= 6.4.4",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.1",
+      "PageSwitcherLib >= 1.0.0",
       "SecureStringExtentionsLib >= 1.0.0",
       "Validation >= 1.0.0",
       "ViewModelBaseLib >= 1.0.0"
@@ -4057,6 +4076,9 @@
             },
             "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\DatabaseControllerLib\\DatabaseControllerLib.csproj": {
               "projectPath": "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\DatabaseControllerLib\\DatabaseControllerLib.csproj"
+            },
+            "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\PageSwitcherLib\\PageSwitcherLib.csproj": {
+              "projectPath": "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\PageSwitcherLib\\PageSwitcherLib.csproj"
             },
             "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\SecureStringExtentionsLib\\SecureStringExtentionsLib.csproj": {
               "projectPath": "C:\\Users\\Kubik\\Desktop\\C_sharp\\RegistrationAndLogining\\SecureStringExtentionsLib\\SecureStringExtentionsLib.csproj"
@@ -4110,7 +4132,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

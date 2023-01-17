@@ -1,4 +1,5 @@
-﻿using RegistrationAndLogining.View.Pages;
+﻿using PageSwitcherLib;
+using RegistrationAndLogining.View.Pages;
 using RegistrationAndLogining.ViewModels.Pages;
 using System;
 using System.Collections.Generic;
@@ -7,9 +8,11 @@ using System.Reflection.Metadata;
 using System.Runtime;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Input;
 using ViewModelBaseLib.Command;
 using ViewModelBaseLib.VM;
+using static PageSwitcherLib.PageSwitcher;
 
 namespace RegistrationAndLogining.ViewModels
 {
@@ -54,13 +57,21 @@ namespace RegistrationAndLogining.ViewModels
 
             m_RegPage = new RegistrationPage();
 
-            m_LoginPage = new LoginPage();
-
-            m_RagistrationPageViewModel = new RegistrationPageViewModel();
-
             m_FrameContent = new object();
 
-            m_FrameContent = m_RegPage;
+            m_LoginPage = new LoginPage();
+
+            m_changePassPage = new ChangePassPage();
+
+            RegisterPage(m_RegPage, "RgPg");
+
+            RegisterPage(m_LoginPage, "LgPg");
+
+            RegisterPage(m_changePassPage, "ChPg");
+
+            PageSwitcher.OnPageChange += PageSwitcher_OnPageChange;
+
+            ChangePage("RgPg");
 
             m_title = "Register";
 
@@ -77,6 +88,11 @@ namespace RegistrationAndLogining.ViewModels
             OnLoginSwitchButtonPressed = new Command(OnLoginSwitchButtonPressedExecute, CanOnLoginSwitchButtonPressedExecute);
 
             #endregion
+        }
+
+        private void PageSwitcher_OnPageChange(Page obj)
+        {
+            FrameContent = obj;
         }
 
         #endregion
@@ -102,7 +118,7 @@ namespace RegistrationAndLogining.ViewModels
 
                     LoginButtonContent = "Register";
 
-                    FrameContent = m_LoginPage;
+                    ChangePage("LgPg");
 
                     m_loginRegistration = LoginRegistration.login;
 
@@ -110,7 +126,7 @@ namespace RegistrationAndLogining.ViewModels
 
                 case LoginRegistration.login:
 
-                    FrameContent = m_RegPage;
+                    ChangePage("RgPg");
 
                     Title = "Register";
 
@@ -139,7 +155,7 @@ namespace RegistrationAndLogining.ViewModels
 
         LoginPage m_LoginPage;
 
-        RegistrationPageViewModel m_RagistrationPageViewModel;
+        ChangePassPage m_changePassPage;
 
         #endregion
 

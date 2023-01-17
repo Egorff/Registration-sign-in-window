@@ -89,7 +89,7 @@ namespace RegistrationAndLogining.View.Pages
         //    }
         //}
 
-        bool CheckPass(PasswordBox pb)
+        public bool CheckPass(PasswordBox pb)
         {
             if (pb.Password.Length == 0)
             {

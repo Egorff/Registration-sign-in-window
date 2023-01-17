@@ -1,0 +1,53 @@
+﻿<Page x:Class="RegistrationAndLogining.View.Pages.ChangePassPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RegistrationAndLogining.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ChangePassPage">
+
+    <!--<Page.DataContext>
+
+        <VM:ChangePassPageViewModel/>
+
+    </Page.DataContext>-->
+    
+    <Grid Background="White">
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="80*" />
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="69*"/>
+            <RowDefinition Height="111*"/>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Row="3" Grid.Column="1" Content="Change pass"
+                    Style="{StaticResource Button}" Margin="43,0,43,0"
+                Command="{Binding OnPasswordChangeButtonPressed}"/>
+
+        <PasswordBox Grid.Column="1" Grid.Row="1" x:Name="NewPass"
+                         FontSize="{StaticResource InputFieldHeader}" 
+                     LostFocus="NewPass_LostFocus"/>
+
+        <Label x:Name="LabelPass2" Grid.Row="1" Grid.Column="1" 
+                   HorizontalContentAlignment="Right"
+                   VerticalContentAlignment="Bottom" 
+                   FontFamily="Arial Narrow" 
+                   FontWeight="Bold" Foreground="OrangeRed" 
+                   Margin="150,20,0,0"/>
+
+    </Grid>
+</Page>

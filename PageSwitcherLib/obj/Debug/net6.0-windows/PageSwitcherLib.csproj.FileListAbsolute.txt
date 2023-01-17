@@ -1,0 +1,12 @@
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\PageSwitcherLib\bin\Debug\net6.0-windows\PageSwitcherLib.deps.json
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\PageSwitcherLib\bin\Debug\net6.0-windows\PageSwitcherLib.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\PageSwitcherLib\bin\Debug\net6.0-windows\PageSwitcherLib.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\PageSwitcherLib\obj\Debug\net6.0-windows\PageSwitcherLib.csproj.AssemblyReference.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\PageSwitcherLib\obj\Debug\net6.0-windows\PageSwitcherLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\PageSwitcherLib\obj\Debug\net6.0-windows\PageSwitcherLib.AssemblyInfoInputs.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\PageSwitcherLib\obj\Debug\net6.0-windows\PageSwitcherLib.AssemblyInfo.cs
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\PageSwitcherLib\obj\Debug\net6.0-windows\PageSwitcherLib.csproj.CoreCompileInputs.cache
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\PageSwitcherLib\obj\Debug\net6.0-windows\PageSwitcherLib.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\PageSwitcherLib\obj\Debug\net6.0-windows\refint\PageSwitcherLib.dll
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\PageSwitcherLib\obj\Debug\net6.0-windows\PageSwitcherLib.pdb
+C:\Users\Kubik\Desktop\C_sharp\RegistrationAndLogining\PageSwitcherLib\obj\Debug\net6.0-windows\ref\PageSwitcherLib.dll
